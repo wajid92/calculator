@@ -48,7 +48,6 @@ render()
                 <div className="butrow">
                     <Button label={'0'} handleClick={this.handleClick}/>
                     <Button label={'='} handleClick={this.handleClick}/>
-                    <Button label={'Ans'} handleClick={this.handleClick}/>
                 </div>
             </div>
         </div>
@@ -79,10 +78,6 @@ handleClick(event){
         }
         case 'Clear':{
             this.setState({answer:'', question:''});
-            break;
-        }
-        case 'Ans':{
-            this.setState({answer:'',question:ans});
             break;
         }
         case 'Delete':{
